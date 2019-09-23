@@ -1,0 +1,14 @@
+C:\Users\sho\source\repos\BloodBankAPI\BloodBankAPI\bin\Debug\netcoreapp2.2\BloodBankAPI.deps.json
+C:\Users\sho\source\repos\BloodBankAPI\BloodBankAPI\bin\Debug\netcoreapp2.2\BloodBankAPI.runtimeconfig.json
+C:\Users\sho\source\repos\BloodBankAPI\BloodBankAPI\bin\Debug\netcoreapp2.2\BloodBankAPI.runtimeconfig.dev.json
+C:\Users\sho\source\repos\BloodBankAPI\BloodBankAPI\bin\Debug\netcoreapp2.2\BloodBankAPI.dll
+C:\Users\sho\source\repos\BloodBankAPI\BloodBankAPI\bin\Debug\netcoreapp2.2\BloodBankAPI.pdb
+C:\Users\sho\source\repos\BloodBankAPI\BloodBankAPI\obj\Debug\netcoreapp2.2\BloodBankAPI.csprojAssemblyReference.cache
+C:\Users\sho\source\repos\BloodBankAPI\BloodBankAPI\obj\Debug\netcoreapp2.2\BloodBankAPI.csproj.CoreCompileInputs.cache
+C:\Users\sho\source\repos\BloodBankAPI\BloodBankAPI\obj\Debug\netcoreapp2.2\BloodBankAPI.RazorAssemblyInfo.cache
+C:\Users\sho\source\repos\BloodBankAPI\BloodBankAPI\obj\Debug\netcoreapp2.2\BloodBankAPI.RazorAssemblyInfo.cs
+C:\Users\sho\source\repos\BloodBankAPI\BloodBankAPI\obj\Debug\netcoreapp2.2\BloodBankAPI.AssemblyInfoInputs.cache
+C:\Users\sho\source\repos\BloodBankAPI\BloodBankAPI\obj\Debug\netcoreapp2.2\BloodBankAPI.AssemblyInfo.cs
+C:\Users\sho\source\repos\BloodBankAPI\BloodBankAPI\obj\Debug\netcoreapp2.2\BloodBankAPI.RazorTargetAssemblyInfo.cache
+C:\Users\sho\source\repos\BloodBankAPI\BloodBankAPI\obj\Debug\netcoreapp2.2\BloodBankAPI.dll
+C:\Users\sho\source\repos\BloodBankAPI\BloodBankAPI\obj\Debug\netcoreapp2.2\BloodBankAPI.pdb
