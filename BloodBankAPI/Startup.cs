@@ -31,6 +31,8 @@ namespace BloodBankAPI
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
             services.AddDbContext<BloodBankContext>(ops
                 => ops.UseSqlServer(Configuration.GetConnectionString("BloodBankDB")));
+
+            
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

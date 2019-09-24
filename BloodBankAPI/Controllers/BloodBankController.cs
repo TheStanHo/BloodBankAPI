@@ -63,6 +63,75 @@ namespace BloodBankAPI.Controllers
             return patient;
         }
 
+        [HttpGet("{BloodType}")]
+        [ActionName("GetDonorMatch")]
+        public async Task <List<List<BloodDB>>> GetDonorMatch(string bloodType)
+        {
+            
+            String[] ABPositive = { "O-", "O+", "B-", "B+", "A-", "AB-", "AB+" };
+            String[] ABNegative = { "O-", "B+", "A-", "AB-" };
+            String[] APositive = { "O-", "O+", "A-", "A+" };
+            String[] ANegative = { "O-", "A-" };
+            String[] BPositive = { "O-", "O+", "B-", "B+" };
+            String[] BNegative = { "O-", "B-" };
+            String[] OPositive = { "O-", "O+" };
+            String[] ONegative = { "O-" };
+
+            String bloodtype = bloodType.ToLower();
+            String[] finalSelected = { };
+
+            if (bloodtype == "abpositive")
+            {
+                finalSelected = ABPositive;
+            }
+            else if (bloodtype == "abnegative")
+            {
+                finalSelected = ABNegative;
+            }
+            else if (bloodtype == "apositive")
+            {
+                finalSelected = APositive;
+            }
+            else if (bloodtype == "anegative")
+            {
+                finalSelected = ANegative;
+            }
+            else if (bloodtype == "bpositive")
+            {
+                finalSelected = BPositive;
+            }
+            else if (bloodtype == "bnegative")
+            {
+                finalSelected = BNegative;
+            }
+            else if (bloodtype == "opositive")
+            {
+                finalSelected = OPositive;
+            }
+            else
+            {
+                finalSelected = ONegative;
+            }
+
+
+
+            List<List<BloodDB>> resultList = new List<List<BloodDB>>();
+
+            foreach (string x in finalSelected)
+            {
+                SqlParameter bloodTypeParam = new SqlParameter()
+                {
+                    ParameterName = "@BloodType",
+                    Value = x
+                };
+                var result = await _context.BloodDB.FromSql("SELECT * FROM dbo.BloodDB WHERE donor = 1 and BloodType = @BloodType", bloodTypeParam).ToListAsync();
+                if(result.Count !=0)
+                resultList.Add(result);
+            }
+
+            return resultList;
+        }
+
         [HttpPost]
         [ActionName("InsertNewPatient")]
         public async Task<ActionResult<IEnumerable<BloodDB>>> AddPatient([FromBody]BloodDB patient)
